@@ -1,0 +1,284 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Variaveis */
+
+:root {
+    --primaryColor: #F0F0F0;
+    --textColor: #333333;
+    --secondColor: #F7F7F7;
+    --forestGreen: #228B22;
+    /*botoes cores*/
+    --green: #008000;
+    /*botoes cores*/
+}
+
+/* Corpo */
+body {
+    line-height: 1.6;
+    font-family: 'Lora', serif;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Estilo do header */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Ocupa toda a largura */
+    background: var(--primaryColor);
+    /* Cor de fundo para contraste */
+    overflow: hidden;
+}
+
+/* Conteúdo do texto e botão */
+.hero-content {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding: 60px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--textColor);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: var(--textColor);
+    margin-bottom: 30px;
+}
+
+/* Botão */
+.cta-button {
+    background-color: var(--forestGreen);
+    color: var(--secondColor);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--green);
+}
+
+.hero-image img {
+    width: 100%;
+    /* Mantém a largura total do container */
+    height: 70vh;
+    object-fit: cover;
+    /* Garante que a imagem seja cortada de forma elegante */
+    display: block;
+    /* Remove qualquer espaço extra ao redor da imagem */
+}
+
+
+/* Seção sobre a causa */
+.about-cause {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--secondColor);
+}
+
+.about-cause h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--textColor);
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.topic {
+    background: var(--secondColor);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+}
+
+.topic img {
+    width: 100%;
+    /* Largura ajusta ao container */
+    height: 200px;
+    /* Altura fixa para todas as imagens */
+    object-fit: cover;
+    /* Garante que a imagem preencha o espaço sem distorção */
+    border-radius: 10px 10px 0 0;
+}
+
+.topic h3 {
+    font-size: 1.5rem;
+    color: var(--textColor);
+    margin-top: 15px;
+}
+
+.topic p {
+    font-size: 1rem;
+    color: var(--textColor);
+    margin: 10px 0;
+}
+
+
+/* Seção de impacto */
+.impact {
+    background-color: var(--primaryColor);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.impact h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--textColor);
+}
+
+.impact ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 20px 0;
+}
+
+.impact li {
+    font-size: 1.25rem;
+    color: var(--textColor);
+    margin: 10px 0;
+}
+
+/* Formulário de doação */
+.donation-form {
+    background-color: var(--secondColor);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.donation-form h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--textColor);
+}
+
+.payment-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--primaryColor);
+    box-shadow: 0px 4px 10px var(--textColor);
+    border-radius: 10px;
+}
+
+/*imagem do qr code*/
+.qr-code {
+    width: 200px;
+    margin-top: 15px;
+}
+
+/*texto da imagem do qr code*/
+#img-p{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--textColor);
+}
+
+/*texto do pagamento*/
+#payment-p{
+    margin-top: 20px;
+    font-size: 1.27rem;
+    color: var(--textColor);
+}
+
+/*texto dos h3*/
+.payment-container, h3 {
+    margin-top: 45px;
+    color: var(--textColor);
+}
+
+.donation-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-form label {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--textColor);
+}
+
+
+/* Estilo dos campos do formulário */
+.donation-form input,
+.donation-form select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid var(--forestGreen);
+    border-radius: 5px;
+}
+
+.donation-form button {
+    background-color: var(--forestGreen);
+    color: var(--secondColor);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+   
+}
+
+.donation-form button:hover {
+    background-color: var(--green);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primaryColor);
+    color:var(--textColor);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Exibe os ícones em linha */
+    gap: 15px; /* Espaço entre os ícones */
+    padding: 0;
+    justify-content: center; /* Centraliza os ícones */
+}
+
+.social-links li {
+    display: inline-block; /* Mantém alinhamento adequado */
+}
+
+.social-links img {
+    width: 25px; /* Ajuste o tamanho dos ícones */
+    height: 25px;
+    transition: transform 0.3s ease-in-out; /* Efeito de zoom ao passar o mouse */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Pequeno aumento ao passar o mouse */
+}

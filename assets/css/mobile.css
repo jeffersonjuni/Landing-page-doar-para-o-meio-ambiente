@@ -1,0 +1,204 @@
+/* Responsividade */
+
+/*para tablets*/
+@media (max-width: 1024px) {
+
+  /*Header*/
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero img {
+    height: 50vh;
+    /* Altura proporcional à altura da janela */
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  /*seção about-cause*/
+  .about-cause h2 {
+    font-size: 1.5rem;
+    /* Diminui o tamanho do título */
+  }
+
+  .topic h3 {
+    font-size: 1.2rem;
+    /* Ajusta o tamanho do subtítulo */
+  }
+
+  .topic p {
+    font-size: 0.9rem;
+    /* Texto um pouco menor */
+  }
+
+  .topics {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Apenas uma coluna */
+    gap: 20px;
+  }
+
+
+  /*seção impact*/
+  .impact h2 {
+    font-size: 1.5rem;
+    /* Diminui o tamanho do título */
+  }
+
+  .impact li {
+    font-size: 0.9rem;
+    /* Texto um pouco menor */
+  }
+
+  /* Formulário de doação */
+  .donation-form h2 {
+    font-size: 1.5rem;
+    /* Diminui o tamanho do título */
+  }
+
+  .qr-code {
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  .payment-container, h3{
+    font-size:1rem;
+  }
+  
+  #img-p {
+    margin-top: 20px;
+    font-size: 0.89rem;
+  }
+
+
+  #payment-p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    
+  }
+
+  .donation-form label {
+    font-size: 0.90rem;
+  }
+
+  .donation-form input,
+  .donation-form select {
+    width: 100%;
+    font-size: 0.90rem;
+  }
+}
+
+
+/*para celulares*/
+@media (max-width: 480px) {
+
+  /*Header*/
+  .hero img {
+    height: 45vh;
+    /* Altura ainda menor para dispositivos móveis */
+  }
+
+  /*seção about-cause*/
+  .about-cause {
+    padding: 30px 15px;
+    /* Reduz o espaçamento geral */
+  }
+
+  .about-cause h2 {
+    font-size: 1.5rem;
+    /* Ajusta o tamanho do título */
+  }
+
+  .topics {
+    grid-template-columns: 1fr;
+    /* Cada card ocupa 100% da largura */
+    gap: 15px;
+    /* Menor espaçamento entre os cards */
+  }
+
+  .topic {
+    padding: 10px;
+    /* Reduz o padding interno dos cards */
+  }
+
+  .topic h3 {
+    font-size: 1.2rem;
+    /* Ajusta o tamanho do subtítulo */
+  }
+
+  .topic p {
+    font-size: 0.85rem;
+    /* Texto menor */
+  }
+
+  /*seção impact*/
+  .impact h2 {
+    font-size: 1.5rem;
+    /* Diminui o tamanho do título */
+  }
+
+  .impact li {
+    font-size: 0.85rem;
+    /* Texto um pouco menor */
+  }
+
+  /* Formulário de doação */
+
+  .donation-form h2 {
+    font-size: 1.4rem;
+    /* Diminui o tamanho do título */
+  }
+
+  .qr-code {
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  .payment-container, h3 {
+    font-size:0.90rem;
+  }
+  
+  #img-p {
+    margin-top: 20px;
+    font-size: 0.89rem;
+  }
+
+
+  #payment-p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    
+  }
+
+
+  .donation-form label {
+    font-size: 0.80rem;
+  }
+  .donation-form input,
+  .donation-form select {
+    width: 100%;
+    font-size: 0.80rem;
+  }
+  .donation-form button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Rodapé */
+
+  footer p {
+    font-size: 0.85rem;
+    /* Texto menor */
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    /* Texto menor */
+  }
+}

@@ -21,6 +21,36 @@
     font-size: 1rem;
   }
 
+  /*seção about-institution*/
+  .about-institution {
+    grid-template-columns: 1fr; /* Empilha os elementos */
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.institution-content {
+    text-align: center; /* Centraliza o texto em telas menores */
+}
+
+.institution-text ul {
+    padding-left: 0;
+}
+
+.institution-image img {
+    max-width: 70%; /* Ajusta o tamanho da imagem */
+}
+
+
+
+.institution-text h2 {
+    font-size: 1.5rem;
+
+}
+
+.institution-text p {
+    font-size: 0.9rem;
+}
+
   /*seção about-cause*/
   .about-cause h2 {
     font-size: 1.5rem;
@@ -103,6 +133,35 @@
     height: 45vh;
     /* Altura ainda menor para dispositivos móveis */
   }
+
+  /*seção about-institution*/
+  .about-institution {
+    grid-template-columns: 1fr; /* Empilha os elementos */
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.institution-content {
+    text-align: center; /* Centraliza o texto em telas menores */
+}
+
+.institution-text ul {
+    padding-left: 0;
+}
+
+.institution-image img {
+    max-width: 70%; /* Ajusta o tamanho da imagem */
+}
+
+
+.institution-text h2 {
+    font-size: 1.5rem;
+
+}
+
+.institution-text p {
+    font-size: 0.9rem;
+}
 
   /*seção about-cause*/
   .about-cause {

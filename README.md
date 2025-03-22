@@ -4,3 +4,6 @@ Este projeto é uma landing page simples voltada para incentivar doações em pr
 
 Tecnologias utilizadas: HTML, CSS e JavaScript.
 Funcionalidades: Layout responsivo e chamada para ação clara.
+
+🌱 Prévia do Projeto
+![print 2](https://github.com/user-attachments/assets/789c1a10-ee38-46b6-8711-1e49140076c1)
